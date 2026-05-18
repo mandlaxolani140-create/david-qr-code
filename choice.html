@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Choose</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:#080808;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'Barlow Condensed',sans-serif;padding:32px 16px;gap:20px}
+.title{font-family:'Bebas Neue',sans-serif;font-size:36px;color:#FFB800;letter-spacing:0.08em;text-align:center}
+.sub{font-size:15px;color:#555;text-align:center;letter-spacing:0.05em;margin-top:-12px}
+.cards{display:flex;flex-direction:column;gap:14px;width:100%;max-width:380px}
+.card{display:flex;align-items:center;gap:16px;background:#111;border:1px solid #222;border-radius:16px;padding:18px 20px;text-decoration:none;transition:border-color .2s,background .2s}
+.card:hover{background:#161616;border-color:#FFB800}
+.card.pdf:hover{border-color:#00bcd4}
+.icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:24px}
+.icon.apk{background:rgba(255,184,0,0.1);border:1px solid rgba(255,184,0,0.3)}
+.icon.pdf{background:rgba(0,188,212,0.1);border:1px solid rgba(0,188,212,0.3)}
+.info{display:flex;flex-direction:column;gap:2px}
+.name{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:0.05em;color:#fff}
+.desc{font-size:13px;color:#555;letter-spacing:0.03em}
+.arrow{margin-left:auto;color:#333;font-size:20px}
+.card:hover .arrow{color:#FFB800}
+.card.pdf:hover .arrow{color:#00bcd4}
+</style>
+</head>
+<body>
+<div class="title">What would you like?</div>
+<div class="sub">Choose an option below</div>
+<div class="cards">
+  <a class="card" href="apk.html">
+    <div class="icon apk">📱</div>
+    <div class="info">
+      <span class="name">David Puzzlr</span>
+      <span class="desc">Android App · v1.0.0 · 9 MB</span>
+    </div>
+    <span class="arrow">›</span>
+  </a>
+  <a class="card pdf" href="https://1drv.ms/p/c/5b9627b9d5a5833a/IQA2cfGTcWGJTpixihAbkjvTAfTphKjxAHAK-F8YeuLFiT0?e=l3DULJ" target="_blank">
+    <div class="icon pdf">📄</div>
+    <div class="info">
+      <span class="name">Cyber Bullying</span>
+      <span class="desc">Grade 12B · L.O · PDF</span>
+    </div>
+    <span class="arrow">›</span>
+  </a>
+</div>
+</body>
+</html>
